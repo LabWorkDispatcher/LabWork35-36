@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#05080D">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="261dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="39sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:text="Personal Cabinet Entrance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/chooseFromDBSpinner"
+        android:enabled="false"
+        android:layout_marginTop="30dp"
+        android:layout_width="261dp"
+        android:layout_height="62dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:paddingTop="19dp"
+        android:paddingBottom="19dp"
+        android:paddingStart="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView1" />
+
+    <TextView
+        android:id="@+id/chooseFromDBText"
+        android:layout_marginTop="30dp"
+        android:layout_width="261dp"
+        android:layout_height="62dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:paddingTop="19dp"
+        android:paddingBottom="19dp"
+        android:paddingStart="13dp"
+        android:gravity="center"
+        android:text="Choose from DB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView1" />
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_marginTop="30dp"
+        android:layout_width="385dp"
+        android:layout_height="62dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textColorHint="#63656B"
+        android:paddingTop="19dp"
+        android:paddingBottom="19dp"
+        android:paddingStart="13dp"
+        android:hint="Insert your name"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+        android:inputType="textFilter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chooseFromDBText" />
+
+    <EditText
+        android:id="@+id/userSurname"
+        android:layout_marginTop="10dp"
+        android:layout_width="385dp"
+        android:layout_height="62dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textColorHint="#63656B"
+        android:paddingTop="19dp"
+        android:paddingBottom="19dp"
+        android:paddingStart="13dp"
+        android:hint="Insert your surname"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+        android:inputType="textFilter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userName" />
+
+    <EditText
+        android:id="@+id/userGroup"
+        android:layout_width="385dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="10dp"
+        android:hint="Insert your group"
+        android:paddingStart="13dp"
+        android:paddingTop="19dp"
+        android:paddingBottom="19dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#63656B"
+        android:textSize="20dp"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+        android:inputType="textFilter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userSurname" />
+
+    <EditText
+        android:id="@+id/worksCompleted"
+        android:layout_marginTop="30dp"
+        android:layout_width="385dp"
+        android:layout_height="62dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textColorHint="#63656B"
+        android:paddingTop="19dp"
+        android:paddingBottom="19dp"
+        android:paddingStart="13dp"
+        android:hint="Insert amount of completed works"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userGroup"/>
+
+    <EditText
+        android:id="@+id/worksAccepted"
+        android:layout_marginTop="10dp"
+        android:layout_width="385dp"
+        android:layout_height="62dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textColorHint="#63656B"
+        android:paddingTop="19dp"
+        android:paddingBottom="19dp"
+        android:paddingStart="13dp"
+        android:hint="Insert amount of accepted works"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/worksCompleted" />
+
+
+    <Button
+        android:id="@+id/goFurtherButton"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

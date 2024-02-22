@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="385dp"
+    android:layout_height="62dp"
+    android:background="@drawable/border_spinner"
+    android:paddingStart="13dp"
+    android:paddingTop="19dp"
+    android:text="Group"
+    android:paddingBottom="19dp"
+    android:textColor="#FFFFFF"
+    android:textSize="20dp" />
